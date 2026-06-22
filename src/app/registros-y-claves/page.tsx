@@ -18,7 +18,7 @@ export default function RegistrosYClavesPage() {
       {/* ── Encabezado ──────────────────────────────────── */}
       <div className="mb-12 text-center">
         <div className="thermal-bar w-16 mx-auto mb-6" />
-        <h1 className="text-4xl font-bold text-[#1C1C1E] mb-3">
+        <h1 className="text-3xl sm:text-4xl font-bold text-[#1C1C1E] mb-3">
           Registros y Claves
         </h1>
         <p className="text-[#64748B] max-w-xl mx-auto leading-relaxed">
@@ -150,9 +150,9 @@ export default function RegistrosYClavesPage() {
           <span className="comentario">{"← Campo Contenido (subcampo)"}</span>
           {"\nFin Registro;"}
         </div>
-        <div className="bg-[#D1FAE5] border border-green-300 rounded-xl p-4 text-sm">
+        <div className="bg-[#D1FAE5] border border-green-300 rounded-xl p-4 text-sm overflow-x-auto">
           <p className="font-semibold text-[#065F46] mb-1">Acceso mediante selector de campo</p>
-          <code className="font-mono text-[#065F46]">
+          <code className="font-mono text-[#065F46] whitespace-nowrap">
             pedidos[0].fecha.dia → {ejemploPedido.fecha.dia}
             {"  |  "}
             pedidos[0].fecha.mes → {ejemploPedido.fecha.mes}
@@ -454,7 +454,7 @@ function Section({
         </span>
         <h2 className="text-xl font-bold text-[#1C1C1E]">{titulo}</h2>
       </div>
-      <div className="pl-13 ml-4 border-l-2 border-[#E2E8F0] pl-6">
+      <div className="ml-4 border-l-2 border-[#E2E8F0] pl-6">
         {children}
       </div>
     </section>

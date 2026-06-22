@@ -143,6 +143,19 @@ body {
 }
 
 /* ============================================================
+   Registro table — mobile
+   ============================================================ */
+@media (max-width: 640px) {
+  .registro-table {
+    font-size: 0.75rem;
+  }
+  .registro-table th,
+  .registro-table td {
+    padding: 6px 8px;
+  }
+}
+
+/* ============================================================
    Bloque de código / definición literaria
    ============================================================ */
 .codigo-registro {

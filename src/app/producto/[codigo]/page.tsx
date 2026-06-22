@@ -32,7 +32,7 @@ export default async function ProductoDetallePage({ params }: Props) {
   return (
     <div className="max-w-6xl mx-auto px-4 py-10">
       {/* Breadcrumb */}
-      <nav className="flex items-center gap-2 text-sm text-[#64748B] mb-8">
+      <nav className="flex items-center flex-wrap gap-2 text-sm text-[#64748B] mb-8">
         <Link href="/" className="hover:text-[#F59E0B] transition-colors">Inicio</Link>
         <span>/</span>
         <Link href="/catalogo" className="hover:text-[#F59E0B] transition-colors">Catálogo</Link>
@@ -70,7 +70,7 @@ export default async function ProductoDetallePage({ params }: Props) {
           </p>
 
           {/* Nombre */}
-          <h1 className="text-3xl font-bold text-[#1C1C1E] leading-tight">
+          <h1 className="text-2xl sm:text-3xl font-bold text-[#1C1C1E] leading-tight">
             {producto.nombre}
           </h1>
 
@@ -103,6 +103,7 @@ export default async function ProductoDetallePage({ params }: Props) {
             <p className="text-xs font-semibold text-[#64748B] uppercase tracking-wider mb-3">
               Campos de este registro PRODUCTO
             </p>
+            <div className="overflow-x-auto">
             <table className="registro-table text-xs">
               <thead>
                 <tr>
@@ -163,6 +164,7 @@ export default async function ProductoDetallePage({ params }: Props) {
                 </tr>
               </tbody>
             </table>
+            </div>
           </div>
         </div>
       </div>

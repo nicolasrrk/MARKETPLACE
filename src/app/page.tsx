@@ -19,7 +19,7 @@ export default function HomePage() {
             <p className="text-[#F59E0B] text-sm font-semibold uppercase tracking-widest mb-4">
               Productos térmicos
             </p>
-            <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-6">
               Todo lo que necesitás para mantener la temperatura
             </h1>
             <p className="text-[#94A3B8] text-lg mb-8 leading-relaxed">
